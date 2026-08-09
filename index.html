@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carftora | Premium Digital Wedding & Event Invitations</title>
+  <meta name="description" content="Create stunning digital wedding invitations, birthday invitations, engagement invitations and custom event invitations with Carftora.">
+  <meta name="keywords" content="digital invitations, wedding invitations, online invitation, birthday invitation, engagement invitation, e-invite, Carftora">
+  <meta name="author" content="Carftora">
+  <meta name="theme-color" content="#050509">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Carftora | Premium Digital Wedding & Event Invitations">
+  <meta property="og:description" content="Premium digital invitations designed to make your special moments unforgettable.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo/favicon.svg">
+  <meta property="og:url" content="https://carftora.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carftora | Premium Digital Wedding & Event Invitations">
+  <meta name="twitter:description" content="Your Story. Your Invitation. Your Moment.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="canonical" href="https://carftora.github.io/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-inner">
+      <svg class="loader-ring" viewBox="0 0 120 120" width="120" height="120">
+        <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+        <circle cx="60" cy="60" r="52" class="ring-progress"></circle>
+      </svg>
+      <h1 class="loader-title">CARFTORA</h1>
+      <p class="loader-sub">Crafting Moments&hellip;</p>
+    </div>
+  </div>
+
+  <!-- ===================== CURSOR GLOW ===================== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo">CARFTORA</a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#showcase" class="nav-link">Invitations</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-glow nav-cta">Create Your Invitation</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== MOBILE MENU OVERLAY ===================== -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+
+  <main id="home">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-grid"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-text reveal-up">
+          <p class="eyebrow">Premium Digital Invitations</p>
+          <h1 class="hero-title">
+            <span class="line">Your Story.</span>
+            <span class="line">Your Invitation.</span>
+            <span class="line gradient-text">Your Moment.</span>
+          </h1>
+          <p class="hero-subtitle">Premium digital invitations designed to make your special moments unforgettable.</p>
+          <div class="hero-actions">
+            <a href="#showcase" class="btn btn-outline">Explore Invitations</a>
+            <a href="#contact" class="btn btn-glow">Create My Invitation</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="1200">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Invitations Crafted</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="98">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="24">0</span><span class="stat-plus">h</span>
+              <span class="stat-label">Fast Turnaround</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-up" style="--delay:0.15s">
+          <div class="invite-card-3d" id="inviteCard3D">
+            <div class="invite-card-glow"></div>
+            <div class="invite-card">
+              <span class="invite-ornament top">&#10023;</span>
+              <p class="invite-kicker">We're Getting Married</p>
+              <h3 class="invite-names">Aarav <span>&amp;</span> Isha</h3>
+              <div class="invite-divider"></div>
+              <p class="invite-date">14th February 2026</p>
+              <p class="invite-venue">The Grand Pavilion, Udaipur</p>
+              <span class="invite-ornament bottom">&#10023;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#showcase" class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-dot"></span>
+      </a>
+    </section>
+
+    <!-- ===================== INVITATION SHOWCASE ===================== -->
+    <section class="section" id="showcase" aria-label="Invitation categories">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Explore</p>
+          <h2 class="section-title">Invitations That Make Moments Memorable</h2>
+        </div>
+
+        <div class="filter-bar reveal-up" id="showcaseFilters" role="tablist" aria-label="Filter invitation categories">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="engagement">Engagement</button>
+          <button class="filter-btn" data-filter="birthday">Birthday</button>
+          <button class="filter-btn" data-filter="babyshower">Baby Shower</button>
+          <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+          <button class="filter-btn" data-filter="party">Party</button>
+          <button class="filter-btn" data-filter="corporate">Corporate</button>
+          <button class="filter-btn" data-filter="festival">Festival</button>
+          <button class="filter-btn" data-filter="other">Other Events</button>
+        </div>
+
+        <div class="showcase-grid" id="showcaseGrid">
+          <!-- Cards injected by script.js from CONFIG.categories -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED WEDDING INVITATIONS ===================== -->
+    <section class="section section-alt" id="featured-weddings" aria-label="Featured wedding invitation designs">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Signature Collection</p>
+          <h2 class="section-title">Featured Wedding Invitations</h2>
+          <p class="section-desc">Six handcrafted designs, ready to be personalized for your day.</p>
+        </div>
+
+        <div class="wedding-grid" id="weddingGrid">
+          <!-- Cards injected by script.js from CONFIG.weddingDesigns -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section" id="services" aria-label="Our services">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Services</p>
+          <h2 class="section-title">Everything You Need For Your Celebration</h2>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          <!-- Cards injected by script.js from CONFIG.services -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="section section-alt" id="how-it-works" aria-label="How it works">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Process</p>
+          <h2 class="section-title">How It Works</h2>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-line"><span class="timeline-line-fill" id="timelineFill"></span></div>
+
+          <div class="timeline-step" data-step="1">
+            <span class="step-num">01</span>
+            <h3 class="step-title">Choose Your Design</h3>
+            <p class="step-desc">Browse our curated collection and pick the style that fits your story.</p>
+          </div>
+          <div class="timeline-step" data-step="2">
+            <span class="step-num">02</span>
+            <h3 class="step-title">Share Your Details</h3>
+            <p class="step-desc">Send us your names, date, venue and any special elements.</p>
+          </div>
+          <div class="timeline-step" data-step="3">
+            <span class="step-num">03</span>
+            <h3 class="step-title">We Craft Your Invitation</h3>
+            <p class="step-desc">Our designers bring your invitation to life with animation and detail.</p>
+          </div>
+          <div class="timeline-step" data-step="4">
+            <span class="step-num">04</span>
+            <h3 class="step-title">Share Your Moment</h3>
+            <p class="step-desc">Receive your link and share it instantly with everyone you love.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CARFTORA ===================== -->
+    <section class="section" id="why-carftora" aria-label="Why choose Carftora">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Our Promise</p>
+          <h2 class="section-title">Why Choose Carftora?</h2>
+        </div>
+
+        <div class="features-grid" id="featuresGrid">
+          <!-- Cards injected by script.js from CONFIG.features -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LIVE INVITATION EXPERIENCE ===================== -->
+    <section class="section section-alt" id="live-experience" aria-label="Live invitation experience">
+      <div class="container live-exp-container">
+        <div class="live-exp-text reveal-up">
+          <p class="eyebrow">See It In Action</p>
+          <h2 class="section-title">A Living, Breathing Invitation</h2>
+          <p class="section-desc">Every Carftora invitation is an interactive experience &mdash; countdown timers, RSVP buttons and live maps, all wrapped in a beautiful design your guests will remember.</p>
+          <ul class="live-exp-list">
+            <li>Real-time countdown to the big day</li>
+            <li>One-tap RSVP collection</li>
+            <li>Direct location &amp; map integration</li>
+            <li>Fully mobile optimized</li>
+          </ul>
+          <a href="#contact" class="btn btn-glow">Build Mine Now</a>
+        </div>
+
+        <div class="phone-mockup reveal-up" style="--delay:0.15s">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <p class="phone-kicker">The Wedding Of</p>
+              <h3 class="phone-names">Rhea &amp; Kabir</h3>
+              <p class="phone-date">21 December 2026</p>
+              <p class="phone-venue">Lake View Palace, Jaipur</p>
+
+              <div class="countdown" id="countdown" aria-live="polite">
+                <div class="cd-box"><span class="cd-num" id="cdDays">00</span><span class="cd-label">Days</span></div>
+                <div class="cd-box"><span class="cd-num" id="cdHours">00</span><span class="cd-label">Hrs</span></div>
+                <div class="cd-box"><span class="cd-num" id="cdMins">00</span><span class="cd-label">Min</span></div>
+                <div class="cd-box"><span class="cd-num" id="cdSecs">00</span><span class="cd-label">Sec</span></div>
+              </div>
+
+              <div class="phone-actions">
+                <button class="phone-btn phone-btn-primary" id="rsvpBtn" type="button">RSVP Now</button>
+                <button class="phone-btn" id="locationBtn" type="button">View Location</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="section" id="gallery" aria-label="Invitation gallery">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Gallery</p>
+          <h2 class="section-title">A Glimpse Into Our Craft</h2>
+        </div>
+
+        <div class="filter-bar reveal-up" id="galleryFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="birthday">Birthday</button>
+          <button class="filter-btn" data-filter="engagement">Engagement</button>
+          <button class="filter-btn" data-filter="babyshower">Baby Shower</button>
+          <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+          <button class="filter-btn" data-filter="party">Party</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Images injected by script.js from CONFIG.gallery -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="section section-alt" id="pricing" aria-label="Pricing plans">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Pricing</p>
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+        </div>
+
+        <div class="pricing-grid" id="pricingGrid">
+          <!-- Cards injected by script.js from CONFIG.plans -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">Testimonials</p>
+          <h2 class="section-title">Loved By Couples &amp; Families</h2>
+        </div>
+
+        <div class="testimonial-slider reveal-up">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slides injected by script.js from CONFIG.testimonials -->
+          </div>
+          <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section-alt" id="faq" aria-label="Frequently asked questions">
+      <div class="container container-narrow">
+        <div class="section-head reveal-up">
+          <p class="eyebrow center">FAQ</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <!-- Items injected by script.js from CONFIG.faqs -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT / ORDER ===================== -->
+    <section class="section cta-section" id="contact" aria-label="Contact and order">
+      <div class="container cta-container reveal-up">
+        <div class="glow-orb orb-cta"></div>
+        <p class="eyebrow center">Get Started</p>
+        <h2 class="section-title">Ready To Create Your Invitation?</h2>
+        <p class="section-desc">Let&rsquo;s turn your special moment into a beautiful digital experience.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="eventType">Event Type</label>
+              <select id="eventType" name="eventType" required>
+                <option value="">Select an event</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Engagement">Engagement</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Baby Shower">Baby Shower</option>
+                <option value="Anniversary">Anniversary</option>
+                <option value="Party">Party</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="messageBox">Tell us about your event</label>
+            <textarea id="messageBox" name="messageBox" rows="4" placeholder="Date, venue, style preferences..."></textarea>
+          </div>
+          <div class="cta-actions">
+            <button type="submit" class="btn btn-glow" id="orderNowBtn">Order Now</button>
+            <a href="#" class="btn btn-whatsapp" id="whatsappBtn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path fill="currentColor" d="M12.004 2.003c-5.514 0-9.997 4.483-9.997 9.997 0 1.763.462 3.483 1.34 4.997L2 22l5.13-1.345a9.96 9.96 0 0 0 4.874 1.242h.004c5.514 0 9.997-4.483 9.997-9.997 0-2.67-1.04-5.18-2.929-7.07a9.935 9.935 0 0 0-7.072-2.827zm0 18.174h-.003a8.15 8.15 0 0 1-4.15-1.135l-.298-.177-3.045.799.813-2.968-.194-.305a8.15 8.15 0 0 1-1.253-4.391c0-4.508 3.669-8.176 8.177-8.176a8.12 8.12 0 0 1 5.783 2.398 8.12 8.12 0 0 1 2.393 5.785c0 4.508-3.669 8.17-8.223 8.17z"/></svg>
+              Chat on WhatsApp
+            </a>
+          </div>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">CARFTORA</p>
+        <p class="footer-tagline">Your Story. Your Invitation. Your Moment.</p>
+        <div class="footer-socials" id="footerSocials">
+          <!-- Icons injected by script.js from CONFIG.socials -->
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#showcase">Invitations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p id="footerEmail">hello@carftora.com</p>
+        <p id="footerPhone">+91 99999 99999</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Carftora. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== INVITATION PREVIEW MODAL ===================== -->
+  <div class="modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close preview">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===================== FULLSCREEN GALLERY MODAL ===================== -->
+  <div class="modal modal-fullscreen" id="galleryModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="galleryModalBackdrop"></div>
+    <div class="modal-fullscreen-content">
+      <button class="modal-close" id="galleryModalClose" aria-label="Close image">&times;</button>
+      <img id="galleryModalImg" src="" alt="">
+      <p id="galleryModalCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===================== TOAST ===================== -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
