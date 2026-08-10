@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carftora | Digital Wedding &amp; Event Invitations</title>
+<meta name="description" content="Create beautiful digital wedding invitations, birthday invitations, engagement invitations and custom event invitations with Carftora.">
+<meta name="theme-color" content="#F72585">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Carftora | Digital Wedding & Event Invitations">
+<meta property="og:description" content="Beautiful digital invitations for every celebration — designed with creativity, delivered with love.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+<meta property="og:url" content="https://carftora.example.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR (desktop only) ============ -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ PAGE LOADER ============ -->
+<div class="loader" id="pageLoader" aria-hidden="true">
+  <div class="loader-logo">Carftora</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo" aria-label="Carftora home">
+      <span class="logo-mark">C</span>
+      <span class="logo-text">Carftora</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#invitations" class="nav-link">Invitations</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#pricing" class="btn btn-primary btn-sm header-cta">Create Invitation</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <nav aria-label="Mobile Primary">
+    <ul>
+      <li style="--i:1"><a href="#home" class="mobile-link">Home</a></li>
+      <li style="--i:2"><a href="#invitations" class="mobile-link">Invitations</a></li>
+      <li style="--i:3"><a href="#services" class="mobile-link">Services</a></li>
+      <li style="--i:4"><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li style="--i:5"><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+      <li style="--i:6"><a href="#pricing" class="mobile-link">Pricing</a></li>
+      <li style="--i:7"><a href="#about" class="mobile-link">About Us</a></li>
+      <li style="--i:8"><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="https://wa.me/917405105606" target="_blank" rel="noopener" class="btn btn-whatsapp mobile-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+  </a>
+</div>
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="sparkles"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy reveal" data-reveal="left">
+        <p class="eyebrow"><i class="fa-solid fa-sparkles"></i> Premium Digital Invitations</p>
+        <h1 class="hero-title">
+          <span class="line line-pink">Your Story.</span>
+          <span class="line line-purple">Your Invitation.</span>
+          <span class="line line-orange">Your Moment.</span>
+        </h1>
+        <p class="hero-desc">Beautiful digital invitations for every celebration, designed with creativity and delivered with love.</p>
+
+        <div class="hero-actions">
+          <a href="#invitations" class="btn btn-primary">Explore Designs <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://wa.me/917405105606" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <ul class="hero-badges">
+          <li><i class="fa-solid fa-gem"></i> Premium Designs</li>
+          <li><i class="fa-solid fa-bolt"></i> Fast Delivery</li>
+          <li><i class="fa-solid fa-share-nodes"></i> Easy to Share</li>
+          <li><i class="fa-solid fa-wand-magic-sparkles"></i> 100% Customizable</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal" data-reveal="right">
+        <div class="phone-frame floaty">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="invite-card invite-card--floral">
+              <div class="invite-deco invite-deco--tl" aria-hidden="true">
+                <svg viewBox="0 0 100 100"><use href="#flower-motif"></use></svg>
+              </div>
+              <div class="invite-deco invite-deco--br" aria-hidden="true">
+                <svg viewBox="0 0 100 100"><use href="#flower-motif"></use></svg>
+              </div>
+              <p class="invite-kicker">You are invited to the wedding of</p>
+              <h3 class="invite-names">Rahul <span>&amp;</span> Priya</h3>
+              <p class="invite-date">24 | NOV | 2026</p>
+              <p class="invite-time">at 7:00 PM onwards</p>
+              <p class="invite-venue">The Grand Palace, Jaipur</p>
+              <div class="invite-couple" aria-hidden="true">
+                <svg viewBox="0 0 220 140"><use href="#couple-illustration"></use></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-float hero-float--1" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
+        <div class="hero-float hero-float--2" aria-hidden="true"><i class="fa-solid fa-ring"></i></div>
+        <div class="hero-float hero-float--3" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+        <div class="confetti-piece c1" aria-hidden="true"></div>
+        <div class="confetti-piece c2" aria-hidden="true"></div>
+        <div class="confetti-piece c3" aria-hidden="true"></div>
+        <div class="confetti-piece c4" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="categories" id="invitations">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center">Browse by Occasion</p>
+        <h2 class="section-title">Explore Invitation Categories</h2>
+      </div>
+
+      <div class="category-row" id="categoryRow">
+        <button class="category-card reveal" data-reveal="up" style="--d:0">
+          <span class="category-icon cat-pink"><i class="fa-solid fa-people-arrows"></i></span>
+          <span class="category-name">Wedding</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:1">
+          <span class="category-icon cat-purple"><i class="fa-solid fa-ring"></i></span>
+          <span class="category-name">Engagement</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:2">
+          <span class="category-icon cat-orange"><i class="fa-solid fa-cake-candles"></i></span>
+          <span class="category-name">Birthday</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:3">
+          <span class="category-icon cat-mint"><i class="fa-solid fa-baby"></i></span>
+          <span class="category-name">Baby Shower</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:4">
+          <span class="category-icon cat-blue"><i class="fa-solid fa-heart"></i></span>
+          <span class="category-name">Anniversary</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:5">
+          <span class="category-icon cat-yellow"><i class="fa-solid fa-champagne-glasses"></i></span>
+          <span class="category-name">Party</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:6">
+          <span class="category-icon cat-pink"><i class="fa-solid fa-briefcase"></i></span>
+          <span class="category-name">Corporate</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:7">
+          <span class="category-icon cat-purple"><i class="fa-solid fa-crown"></i></span>
+          <span class="category-name">Festival</span>
+        </button>
+        <button class="category-card reveal" data-reveal="up" style="--d:8">
+          <span class="category-icon cat-orange"><i class="fa-solid fa-gift"></i></span>
+          <span class="category-name">Other Events</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED INVITATIONS ============ -->
+  <section class="featured" id="services">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div>
+          <p class="eyebrow">Our Collection</p>
+          <h2 class="section-title">Featured Wedding Invitations</h2>
+          <p class="section-sub">Beautiful designs created for beautiful beginnings.</p>
+        </div>
+        <a href="#gallery" class="link-view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="carousel-wrap reveal">
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous designs"><i class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="carousel-track-wrap">
+          <ul class="carousel-track" id="carouselTrack">
+            <!-- JS renders invitation cards here -->
+          </ul>
+        </div>
+
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next designs"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER 1 ============ -->
+  <section class="cta-banner reveal">
+    <div class="container cta-banner-inner">
+      <div class="cta-banner-deco cta-deco-1" aria-hidden="true"><i class="fa-solid fa-gift"></i></div>
+      <div class="cta-banner-deco cta-deco-2" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+      <div class="cta-banner-deco cta-deco-3" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      <div class="cta-banner-text">
+        <h2>Ready to Create Something Beautiful?</h2>
+        <p>Let's turn your special moments into unforgettable memories.</p>
+        <div class="cta-banner-actions">
+          <a href="#pricing" class="btn btn-primary">Create Now</a>
+          <a href="https://wa.me/917405105606" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+      <a href="tel:+917405105606" class="cta-banner-phone">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>
+          <strong>7405105606</strong>
+          Chat with us!
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center">Simple &amp; Seamless</p>
+        <h2 class="section-title">How It Works</h2>
+      </div>
+
+      <div class="steps" id="stepsRow">
+        <div class="step reveal" data-reveal="up" style="--d:0">
+          <span class="step-num step-num--pink">01</span>
+          <h3>Choose Your Design</h3>
+          <p>Pick your favorite invitation design.</p>
+        </div>
+        <div class="step-line reveal" style="--d:0"></div>
+        <div class="step reveal" data-reveal="up" style="--d:1">
+          <span class="step-num step-num--orange">02</span>
+          <h3>Share Your Details</h3>
+          <p>Share your event details and preferences.</p>
+        </div>
+        <div class="step-line reveal" style="--d:1"></div>
+        <div class="step reveal" data-reveal="up" style="--d:2">
+          <span class="step-num step-num--blue">03</span>
+          <h3>We Craft Your Invitation</h3>
+          <p>Our expert team creates the magic for you.</p>
+        </div>
+        <div class="step-line reveal" style="--d:2"></div>
+        <div class="step reveal" data-reveal="up" style="--d:3">
+          <span class="step-num step-num--mint">04</span>
+          <h3>Share &amp; Celebrate</h3>
+          <p>You share, your guests admire, and memories begin!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE CARFTORA + LIVE DEMO ============ -->
+  <section class="why-demo">
+    <div class="container why-demo-inner">
+      <div class="why-choose">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Carftora Difference</p>
+          <h2 class="section-title">Why Choose Carftora?</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card reveal" data-reveal="up" style="--d:0">
+            <span class="feature-icon fi-pink"><i class="fa-solid fa-gem"></i></span>
+            <h3>Premium Quality</h3>
+            <p>Stunning designs crafted with perfection.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:1">
+            <span class="feature-icon fi-mint"><i class="fa-solid fa-bolt"></i></span>
+            <h3>Fast Delivery</h3>
+            <p>On-time delivery, every single time.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:2">
+            <span class="feature-icon fi-blue"><i class="fa-solid fa-share-nodes"></i></span>
+            <h3>Easy Sharing</h3>
+            <p>Share via WhatsApp, Email &amp; more.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:3">
+            <span class="feature-icon fi-orange"><i class="fa-solid fa-pen-nib"></i></span>
+            <h3>Fully Customizable</h3>
+            <p>Make it truly, uniquely yours.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:4">
+            <span class="feature-icon fi-purple"><i class="fa-solid fa-headset"></i></span>
+            <h3>24/7 Support</h3>
+            <p>We're here to help, anytime.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:5">
+            <span class="feature-icon fi-yellow"><i class="fa-solid fa-tags"></i></span>
+            <h3>Affordable Pricing</h3>
+            <p>Best quality at the best prices.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:6">
+            <span class="feature-icon fi-pink"><i class="fa-solid fa-mobile-screen"></i></span>
+            <h3>Mobile Friendly</h3>
+            <p>Looks perfect on every device.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal="up" style="--d:7">
+            <span class="feature-icon fi-mint"><i class="fa-solid fa-heart"></i></span>
+            <h3>Made With Love</h3>
+            <p>Designed with heart &amp; creativity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="live-demo reveal" data-reveal="right">
+        <div class="phone-frame phone-frame--demo floaty-slow">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="invite-card invite-card--demo">
+              <p class="invite-kicker">You are invited to the wedding of</p>
+              <h3 class="invite-names invite-names--sm">Rahul <span>&amp;</span> Priya</h3>
+              <p class="invite-date">24 | NOV | 2026 &nbsp;&middot;&nbsp; 7:00 PM</p>
+
+              <div class="countdown" id="countdown" aria-live="polite">
+                <div class="countdown-box"><span id="cdDays">--</span><small>Days</small></div>
+                <div class="countdown-box"><span id="cdHours">--</span><small>Hours</small></div>
+                <div class="countdown-box"><span id="cdMins">--</span><small>Minutes</small></div>
+                <div class="countdown-box"><span id="cdSecs">--</span><small>Seconds</small></div>
+              </div>
+
+              <p class="invite-venue"><i class="fa-solid fa-location-dot"></i> The Grand Palace, Jaipur</p>
+
+              <div class="invite-demo-actions">
+                <button class="btn btn-primary btn-sm" id="rsvpBtn" type="button">RSVP Now</button>
+                <a href="https://www.google.com/maps/search/?api=1&query=The+Grand+Palace+Jaipur" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  <i class="fa-solid fa-map-location-dot"></i> View Location
+                </a>
+              </div>
+              <button class="invite-share" id="shareBtn" type="button" aria-label="Share invitation">
+                <i class="fa-solid fa-share-nodes"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center">Our Portfolio</p>
+        <h2 class="section-title">Our Work Gallery</h2>
+      </div>
+
+      <div class="gallery-filters reveal" id="galleryFilters" role="tablist" aria-label="Filter gallery by category">
+        <button class="filter-chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-chip" data-filter="wedding" role="tab" aria-selected="false">Wedding</button>
+        <button class="filter-chip" data-filter="engagement" role="tab" aria-selected="false">Engagement</button>
+        <button class="filter-chip" data-filter="birthday" role="tab" aria-selected="false">Birthday</button>
+        <button class="filter-chip" data-filter="babyshower" role="tab" aria-selected="false">Baby Shower</button>
+        <button class="filter-chip" data-filter="anniversary" role="tab" aria-selected="false">Anniversary</button>
+        <button class="filter-chip" data-filter="party" role="tab" aria-selected="false">Party</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- JS renders gallery items -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center">Simple, Transparent Pricing</p>
+        <h2 class="section-title">Our Pricing Plans</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal" data-reveal="up" style="--d:0">
+          <h3 class="price-plan">Basic</h3>
+          <p class="price-tag">₹999</p>
+          <p class="price-desc">Digital Invitation</p>
+          <ul class="price-features">
+            <li><i class="fa-solid fa-check"></i> Digital Invitation</li>
+            <li><i class="fa-solid fa-check"></i> 1 Revision</li>
+            <li><i class="fa-solid fa-check"></i> Shareable Link</li>
+            <li><i class="fa-solid fa-check"></i> Basic Support</li>
+          </ul>
+          <button class="btn btn-outline plan-btn" data-plan="Basic" data-price="₹999">Choose Plan</button>
+        </div>
+
+        <div class="price-card price-card--popular reveal" data-reveal="up" style="--d:1">
+          <span class="popular-badge">Most Popular</span>
+          <h3 class="price-plan">Premium</h3>
+          <p class="price-tag">₹1,999</p>
+          <p class="price-desc">Animated Invitation</p>
+          <ul class="price-features">
+            <li><i class="fa-solid fa-check"></i> Animated Invitation</li>
+            <li><i class="fa-solid fa-check"></i> 3 Revisions</li>
+            <li><i class="fa-solid fa-check"></i> Shareable Link</li>
+            <li><i class="fa-solid fa-check"></i> WhatsApp Support</li>
+            <li><i class="fa-solid fa-check"></i> Background Music</li>
+            <li><i class="fa-solid fa-check"></i> RSVP</li>
+            <li><i class="fa-solid fa-check"></i> Location</li>
+          </ul>
+          <button class="btn btn-primary plan-btn" data-plan="Premium" data-price="₹1,999">Choose Plan</button>
+        </div>
+
+        <div class="price-card reveal" data-reveal="up" style="--d:2">
+          <h3 class="price-plan">Luxury</h3>
+          <p class="price-tag">₹3,999</p>
+          <p class="price-desc">Premium Custom Invitation</p>
+          <ul class="price-features">
+            <li><i class="fa-solid fa-check"></i> Custom Design</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited Revisions</li>
+            <li><i class="fa-solid fa-check"></i> Priority Support</li>
+            <li><i class="fa-solid fa-check"></i> Background Music</li>
+            <li><i class="fa-solid fa-check"></i> RSVP + Location</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 Support</li>
+          </ul>
+          <button class="btn btn-outline plan-btn" data-plan="Luxury" data-price="₹3,999">Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center">Client Love</p>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+
+      <div class="testi-wrap reveal">
+        <div class="testi-track" id="testiTrack">
+          <!-- JS renders testimonials -->
+        </div>
+        <div class="testi-dots" id="testiDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq">
+    <div class="container faq-inner">
+      <div class="section-head reveal">
+        <p class="eyebrow">Questions, Answered</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list reveal" id="faqList">
+        <!-- JS renders FAQ items -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" id="contact">
+    <div class="container final-cta-inner">
+      <div class="final-cta-deco fc-1" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
+      <div class="final-cta-deco fc-2" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+      <div class="final-cta-deco fc-3" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+      <div class="final-cta-deco fc-4" aria-hidden="true"><i class="fa-solid fa-gift"></i></div>
+
+      <h2>Let's Create Something Amazing!</h2>
+      <p>We're excited to be a part of your special moments.</p>
+      <a href="https://wa.me/917405105606" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <a href="tel:+917405105606" class="final-cta-phone"><i class="fa-solid fa-phone"></i> +91 7405105606</a>
+
+      <div class="final-cta-socials">
+        <a href="https://instagram.com/carftora" target="_blank" rel="noopener" aria-label="Carftora on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/carftora" target="_blank" rel="noopener" aria-label="Carftora on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/917405105606" target="_blank" rel="noopener" aria-label="Carftora on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://pinterest.com/carftora" target="_blank" rel="noopener" aria-label="Carftora on Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Carftora</span>
+      </a>
+      <p>Your Story. Your Invitation. Your Moment.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/carftora" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/carftora" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/917405105606" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#invitations">Invitations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#invitations">Wedding Invitations</a></li>
+        <li><a href="#invitations">Birthday Invitations</a></li>
+        <li><a href="#invitations">Engagement Invitations</a></li>
+        <li><a href="#invitations">All Occasions</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="tel:+917405105606"><i class="fa-solid fa-phone"></i> +91 7405105606</a></li>
+        <li><a href="mailto:hello@carftora.com"><i class="fa-solid fa-envelope"></i> hello@carftora.com</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; <span id="footerYear">2026</span> Carftora. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+<a href="https://wa.me/917405105606" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Chat with Carftora on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ============ INVITATION PREVIEW MODAL ============ -->
+<div class="modal-overlay" id="previewModal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalNames">
+    <button class="modal-close" id="modalClose" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-invite" id="modalInviteCard">
+      <div class="invite-deco invite-deco--tl" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#flower-motif"></use></svg></div>
+      <div class="invite-deco invite-deco--br" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#flower-motif"></use></svg></div>
+      <p class="invite-kicker" id="modalKicker">You are invited to the wedding of</p>
+      <h3 class="invite-names" id="modalNames">Rahul <span>&amp;</span> Priya</h3>
+      <p class="invite-date" id="modalDate">24 | NOV | 2026</p>
+      <p class="invite-venue" id="modalVenue">The Grand Palace, Jaipur</p>
+      <p class="modal-style-tag" id="modalStyle">Floral Bliss</p>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-sm" id="modalRsvp" type="button">RSVP Now</button>
+        <a href="https://www.google.com/maps/search/?api=1&query=Jaipur" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="modalLocation">
+          <i class="fa-solid fa-map-location-dot"></i> Location
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ IMAGE / GALLERY LIGHTBOX ============ -->
+<div class="lightbox-overlay" id="lightboxOverlay" aria-hidden="true">
+  <button class="modal-close" id="lightboxClose" aria-label="Close image viewer"><i class="fa-solid fa-xmark"></i></button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<!-- ============ RSVP TOAST ============ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ============ SVG SPRITE (shared decorative art) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="flower-motif" viewBox="0 0 100 100">
+      <g fill="currentColor" opacity="0.9">
+        <circle cx="50" cy="30" r="10"></circle>
+        <circle cx="35" cy="45" r="10"></circle>
+        <circle cx="65" cy="45" r="10"></circle>
+        <circle cx="42" cy="60" r="9"></circle>
+        <circle cx="58" cy="60" r="9"></circle>
+        <circle cx="50" cy="46" r="7" fill="#FFD166"></circle>
+      </g>
+    </symbol>
+    <symbol id="couple-illustration" viewBox="0 0 220 140">
+      <g>
+        <ellipse cx="110" cy="132" rx="90" ry="8" fill="#00000010"></ellipse>
+        <!-- groom -->
+        <g>
+          <path d="M70 60 C70 40 85 30 95 30 C105 30 118 40 118 60 L118 130 L70 130 Z" fill="#F72585"></path>
+          <circle cx="94" cy="24" r="16" fill="#F1C6A0"></circle>
+          <path d="M78 14 Q94 -4 110 14 L110 20 Q94 10 78 20 Z" fill="#FF9F43"></path>
+          <rect x="86" y="34" width="16" height="10" fill="#FFD166"></rect>
+        </g>
+        <!-- bride -->
+        <g>
+          <path d="M120 55 C120 35 138 26 150 26 C162 26 180 35 180 55 L188 130 L112 130 Z" fill="#7B61FF"></path>
+          <circle cx="150" cy="22" r="15" fill="#F1C6A0"></circle>
+          <path d="M136 12 Q150 -2 164 12 L162 26 Q150 16 138 26 Z" fill="#FF3D8A"></path>
+          <path d="M150 34 L146 42 L150 46 L154 42 Z" fill="#FFD166"></path>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<script src="script.js"></script>
+</body>
+</html>
